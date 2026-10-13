@@ -1,42 +1,49 @@
 # Security Fundamentals Assessment
 
-**Internship:** Swynex  
-**Task:** Task 1  
-**Domain:** Cybersecurity
-
 ## 1. Objective
-
-The objective of this assessment is to identify security risks in an authorized training environment, document evidence, evaluate potential impact, and recommend suitable mitigation measures.
+The objective of this assessment is to understand basic security risks, identify potential vulnerabilities in an authorized learning environment, and recommend suitable security measures.
 
 ## 2. Scope
-
-The assessment will be performed only on an intentionally vulnerable training application or a personal lab where testing is authorized.
+This assessment is intended for an authorized cybersecurity training lab. No unauthorized systems were tested.
 
 ## 3. Methodology
+- Reviewed basic security concepts.
+- Prepared a checklist of common web application security risks.
+- Identified security checks that should be performed in a controlled lab.
+- Documented recommended mitigation measures.
 
-1. Identify the components included in the assessment scope.
-2. Perform safe security checks in the authorized lab.
-3. Record observations and screenshots.
-4. Evaluate the risk associated with each verified finding.
-5. Recommend appropriate security improvements.
+## 4. Security Checks and Recommendations
 
-## 4. Security Findings
+### Check 1: Input Validation
+**Risk:** Improper validation may allow unexpected or malicious input.
 
-Findings will be documented after practical testing and verification.
+**Evidence:** Practical testing not completed. This is a potential risk to investigate, not a confirmed vulnerability.
 
-For each finding, the report will include:
-- Finding ID
-- Affected component
-- Vulnerability description
-- Risk level
-- Evidence
-- Potential impact
-- Recommended mitigation
+**Recommendation:** Validate input on the server, use parameterized database queries, and reject invalid input.
 
-## 5. Conclusion
+### Check 2: Authentication and Password Security
+**Risk:** Weak authentication controls may allow unauthorized access.
 
-This assessment aims to develop practical skills in security testing, risk identification, evidence documentation, and vulnerability mitigation.
+**Evidence:** Practical testing not completed. No vulnerability is confirmed.
 
-## 6. Evidence
+**Recommendation:** Enforce strong passwords, secure password storage, and appropriate login protections.
 
-Screenshots and supporting observations will be added after completing the practical assessment.
+### Check 3: Access Control
+**Risk:** Missing authorization checks may expose information to unauthorized users.
+
+**Evidence:** Practical testing not completed. No vulnerability is confirmed.
+
+**Recommendation:** Verify permissions on the server for every protected resource and action.
+
+### Check 4: Security Configuration
+**Risk:** Insecure configuration may expose sensitive information or unnecessary services.
+
+**Evidence:** Practical testing not completed. No vulnerability is confirmed.
+
+**Recommendation:** Disable unnecessary services, protect secrets, and configure appropriate security headers.
+
+## 5. Limitations
+The local lab setup was not completed, so the checks above are recommendations for further testing rather than verified findings.
+
+## 6. Conclusion
+This assessment helped organize important web application security checks and their mitigations. Practical validation in an authorized lab is required before reporting any confirmed vulnerabilities.
